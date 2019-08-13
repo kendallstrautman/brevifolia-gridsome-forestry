@@ -42,14 +42,17 @@ query getPostData ($path: String!) {
     }
 
     .blog__hero {
-    min-height: 300px;
-    height: 60vh;
-    width: 100%;
-    margin: 0;
-        img {
-            margin-bottom: 0;
-            object-fit: cover;
-        }
+        overflow: hidden;
+        min-height: 300px;
+        height: 60vh;
+        width: 100%;
+        margin: 0;
+            img {
+                min-width: 100%;
+                min-height: 100%;
+                margin-bottom: 0;
+                object-fit: cover;
+            }
     }
 
     .blog__info {
