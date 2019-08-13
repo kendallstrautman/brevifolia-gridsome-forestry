@@ -6,13 +6,31 @@
             </g-link>
             <div>
                 <h1>
-                    <g-link to="/info">Info</g-link>
+                    <g-link :to="infoLink">{{isInfoPage ? "info" : "close"}}</g-link>
                 </h1>
             </div>
         </nav>
     </header>
 </template>
 
+<script>
+export default {
+    props: {
+        page: {
+            type: String,
+            required: true
+        }
+    },
+    computed: {
+        infoLink: function() {
+            return this.page === "home" ? "/info" : "/"
+        }, 
+        isInfoPage: function() {
+            return this.page === "home" ? true : false
+        }
+    }
+}
+</script>
 
 <static-query>
 query {

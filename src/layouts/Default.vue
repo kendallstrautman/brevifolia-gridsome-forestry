@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <Header />
+    <Header :page="page" />
     <div class="content">
       <slot/>
     </div>
@@ -13,7 +13,14 @@ import Header from '~/components/Header.vue'
     export default {
         components: {
             Header
-        }
+        }, 
+        props: {
+          page: {
+              type: String,
+              required: true
+          }
+        }, 
+        
     }
 </script>
 
