@@ -91,6 +91,7 @@
     }
     p {
       max-width: 900px;
+      color: #464646;
     }
   }
   

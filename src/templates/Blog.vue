@@ -16,8 +16,10 @@
 
 <script>
     export default {
-        metaInfo: {
-            title: "blog post title"
+        metaInfo() {
+            return {
+                title: this.$page.post.title
+            }
         }
     }
 </script>
@@ -34,7 +36,7 @@ query getPostData ($path: String!) {
 }
 </page-query>
 
-<style lang="scss" scoped>
+<style lang="scss" >
     .blog {
         h1 {
             margin-bottom: 0.7rem;
@@ -56,10 +58,10 @@ query getPostData ($path: String!) {
     }
 
     .blog__info {
-    padding: 1.5rem 1.25rem;
-    width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
+        padding: 1.5rem 1.25rem;
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
         h1 {
             margin-bottom: 0.66rem;
         }
@@ -69,12 +71,12 @@ query getPostData ($path: String!) {
     }
 
     .blog__body {
-    width: 100%;
-    padding: 0 1.25rem;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        width: 100%;
+        padding: 0 1.25rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         a {
             padding-bottom: 1.5rem;
         }
@@ -85,7 +87,7 @@ query getPostData ($path: String!) {
             font-weight: normal;
         }
         p {
-            color: inherit;
+            color: #464646;
         }
         ul {
             list-style: initial;
