@@ -1,10 +1,10 @@
 <template>
     <section>
         <ul class="list">
-             <g-link  v-for="post in posts" :key="post.node.title" :to="post.node.slug" >
+             <g-link  v-for="post in posts" :key="post.node.title" :to="post.node.path" >
                 <li>
                     <div class="hero_image">
-                        <img :src="post.node.hero_image" :alt="post.node.title">
+                        <g-image :src="post.node.hero_image" :alt="post.node.title" width="300" height="300" quality="75"></g-image>
                     </div>
                     <div class="blogList__info">
                         <h2>{{ post.node.title }}</h2>

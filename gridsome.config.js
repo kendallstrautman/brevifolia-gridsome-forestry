@@ -1,4 +1,4 @@
-const config = require("./content/data/config.json")
+const config = require("./src/assets/content/data/config.json")
 
 module.exports = {
   siteName: config.title,
@@ -8,23 +8,39 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Blog',
-        path: 'content/blog/**/*.md',
+        path: 'src/assets/content/blog/**/*.md',
         route: '/blog/:slug',
+        resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"]
         }
       }
     }
-  ], 
-  transformers:{
-    remark: {
-      
-    }
-  }
+  ]
 }
 
 
+
+// {
+//   use: '@gridsome/source-filesystem',
+//   options: {
+//     typeName: 'Blog',
+//     path: 'src/assets/content/blog/**/*.md',
+//     route: '/blog/:slug',
+//     resolveAbsolutePaths: true,
+//     remark: {
+//       externalLinksTarget: "_blank",
+//       externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+//     }
+//   }
+// }
+// ], 
+// transformers:{
+// remark: {
+  
+// }
+// }
 
 
 // {

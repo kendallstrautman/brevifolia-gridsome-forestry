@@ -3,7 +3,7 @@ title: The truth about Doug-fir
 slug: /blog/doug-fir
 author: David Douglas
 date: 2019-07-09T16:04:44.000+00:00
-hero_image: "content/images/sonja-punz-N47B_zibNGo-unsplash.jpg"
+hero_image: "/src/assets/content/images/sonja-punz-N47B_zibNGo-unsplash.jpg"
 
 ---
 
