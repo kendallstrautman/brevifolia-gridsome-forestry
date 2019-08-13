@@ -8,8 +8,8 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Blog',
-        path: 'src/assets/content/blog/**/*.md',
-        route: '/blog/:slug',
+        baseDir: "./src/assets/content/",
+        path: 'blog/**/*.md',
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
