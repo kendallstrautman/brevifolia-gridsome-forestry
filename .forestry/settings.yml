@@ -11,6 +11,8 @@ sections:
   label: Blog Posts
   create: documents
   match: "**/*"
+  templates:
+  - blog-post
 - type: document
   path: src/assets/content/data/authors.json
   label: Authors List
