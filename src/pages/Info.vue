@@ -62,10 +62,13 @@
     }
 </page-query>
 
-<style lang="scss" scoped>
+<style lang="scss">
     .info__blurb {
         max-width: 800px;
         padding: 1.5rem 1.25rem;
+        p {
+            font-size: 1.4rem;
+        }
     }
 
     @media (min-width: 768px) {
