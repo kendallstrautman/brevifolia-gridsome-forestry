@@ -12,6 +12,10 @@ fields:
 - type: textarea
   name: cta
   label: cta
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: field_group
   name: contact
   label: contact
