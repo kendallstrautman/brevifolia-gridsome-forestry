@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "forestry-preview": "gridsome develop -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.5.0",
