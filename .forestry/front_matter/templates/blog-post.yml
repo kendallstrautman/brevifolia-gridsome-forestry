@@ -5,9 +5,19 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: author
-  label: author
+- name: author
+  type: select
+  default: ''
+  config:
+    required: true
+    options: []
+    source:
+      type: documents
+      section: authors-list
+      file: src/assets/content/data/authors.json
+      path: authors
+  label: Author
+  description: Choose author, to add a new author go to the Authors List file
 - type: datetime
   name: date
   label: date
