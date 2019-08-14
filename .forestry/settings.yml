@@ -11,6 +11,9 @@ sections:
   label: Blog Posts
   create: documents
   match: "**/*"
+- type: document
+  path: src/assets/content/data/info.json
+  label: Info Page
 - type: heading
   label: Config
 - type: document
