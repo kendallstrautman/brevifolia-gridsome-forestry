@@ -1,7 +1,7 @@
 ---
 title: The coastal red giants
 slug: "/blog/coastal-redwood"
-author: Ricardo Nagaoka
+author: Watson & Crick
 date: 2019-07-10T16:04:44.000+00:00
 hero_image: "/src/assets/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
 
