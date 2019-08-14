@@ -12,6 +12,9 @@ sections:
   create: documents
   match: "**/*"
 - type: document
+  path: src/assets/content/data/authors.json
+  label: Authors List
+- type: document
   path: src/assets/content/data/info.json
   label: Info Page
 - type: heading
