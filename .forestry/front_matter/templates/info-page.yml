@@ -5,6 +5,10 @@ fields:
 - type: textarea
   name: description
   label: description
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: textarea
   name: cta
   label: cta
