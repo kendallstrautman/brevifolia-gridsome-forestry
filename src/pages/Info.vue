@@ -1,10 +1,8 @@
 <template>
     <Layout page="info">
         <section class="info__blurb">
-            <h2> 
                 <div v-html="data.description"></div>
                 <div v-html="data.cta"></div>
-            </h2>
             <ul>
                 <li>
                     <p>
