@@ -21,9 +21,19 @@ fields:
   - type: text
     name: github_handle
     label: github_handle
-- type: text
-  name: background_color
+- name: background_color
+  type: color
   label: background_color
-- type: text
-  name: text_color
-  label: text_color
+  config:
+    required: false
+    color_format: Hex
+  description: Enter info page background color here
+  default: "#A2B6B2"
+- name: text_color
+  type: color
+  label: Text Color
+  config:
+    required: false
+    color_format: Hex
+  description: Enter page text color here
+  default: "#EBEBEB"
