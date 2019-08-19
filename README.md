@@ -77,7 +77,7 @@ You can set up a [remote admin](https://forestry.io/docs/editing/remote-admin/) 
 
 ### Instant Previews
 
-The [instant preview](https://forestry.io/docs/previews/instant-previews/) method spins up the Gatsby development server for a long-lived preview that can quickly respond to content updates. When using instant previews, your preview command should be the develop command. The development server spawned by this command should be available over port 8080, and bind to 0.0.0.0. The forestry:preview command in this project's package.json will spin up a Gatsby dev server compatible with Forestry's instant previews.
+The [instant preview](https://forestry.io/docs/previews/instant-previews/) method spins up the Gridsome development server for a long-lived preview that can quickly respond to content updates. When using instant previews, your preview command should be the develop command. The development server spawned by this command should be available over port 8080, and bind to 0.0.0.0. The forestry:preview command in this project's package.json will launch a dev server compatible with Forestry's instant previews.
 
 ## Deploy Options
 
