@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+    <Layout page="blog">
          <article class="blog">
             <figure class="blog__hero">
                 <g-image :src="$page.post.hero_image" :alt="$page.post.title"></g-image>
@@ -9,7 +9,14 @@
             <h3>{{ $page.post.date }}</h3>
             </div>
             <div class="blog__body" v-html="$page.post.content"></div>
-            <h2 class="blog__footer">Written By: {{ $page.post.author }}</h2>
+            <div class="blog__footer">
+                <h2>Written By: {{ $page.post.author }}</h2>
+                <g-link :to="nextBlogPath">
+                    <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" x="0px" y="0px" viewBox="0 0 26 26" enableBackground="new 0 0 26 26" >
+                        <path d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z"/>
+                    </svg>
+                </g-link>
+            </div>
         </article>
     </Layout>
 </template>
@@ -20,20 +27,43 @@
             return {
                 title: this.$page.post.title
             }
-        }
+        }, 
+        computed: {
+            nextBlogPath: function() {
+                const allBlogs = this.$page.all.edges
+                const firstBlogPath = allBlogs[0].node.path
+                const currentBlog = allBlogs.filter(node => node.node.title === this.$page.post.title)
+                function isNull(item) {
+                    return item == null || item == undefined
+                }
+                return isNull(currentBlog[0].next) ? firstBlogPath : currentBlog[0].next.path
+            }
+        } 
     }
 </script>
 
 <page-query>
 query getPostData ($path: String!) {
-    post: blog(path: $path) { 
+    post: blog(path: $path) {
         title
         date (format: "MMMM DD YYYY")
         author
         content
         hero_image (quality: 80)
     }
+    all: allBlog {
+        edges {
+            node {
+                path
+                title
+            }
+            next {
+                path
+            }
+        }
+    }
 }
+
 </page-query>
 
 <style lang="scss" >
@@ -49,12 +79,12 @@ query getPostData ($path: String!) {
         height: 60vh;
         width: 100%;
         margin: 0;
-            img {
-                min-width: 100%;
-                min-height: 100%;
-                margin-bottom: 0;
-                object-fit: cover;
-            }
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            margin-bottom: 0;
+            object-fit: cover;
+        }
     }
 
     .blog__info {
@@ -79,16 +109,23 @@ query getPostData ($path: String!) {
         flex-direction: column;
         justify-content: center;
         a {
-            padding-bottom: 1.5rem;
+            padding-bottom: 1.45rem;
         }
         :last-child {
             margin-bottom: 0;
         }
-        h1, h2, h3, h4, h5, h6, p {
+        h1, h2, h3, h4, h5, h6 {
             font-weight: normal;
+            padding: 1.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
         }
         p {
             color: #464646;
+            font-weight: normal;
+            img {
+                margin: 1rem 0;
+            }
         }
         ul {
             list-style: initial;
