@@ -58,7 +58,7 @@ With Gridsome offering a plugin-rich ecosystem, there are a few key plugins that
 
 ## Project Structure 
 
-- Site-level configuration is stored in `src/assets/config.json`. This file is loaded in the `gridsome.config.js` to configure Gridsome and all it to be accessible via metaData in your graphql queries.
+- Site-level configuration is stored in `src/assets/config.json`. This file is loaded in the `gridsome.config.js` to configure Gridsome and allow it to be accessible via metaData in your graphql queries.
 - Add and access plugin options or metaData via `gridsome.config.js`.
 - Access Gridsome's [server api](https://gridsome.org/docs/server-api) via `gridsome.server.js`. Currently this is just boilerplate. 
 - Edit global & reset styles via `src/assets/styles/...`. Edit styles specific to a page or component within the `.vue` file between the `<style>` tags
