@@ -29,11 +29,8 @@ export default {
                     date  (format: "MMMM DD YYYY")
                     hero_image (width:1000, quality: 75)
                     content
-                    excerpt
                 }
             }
         }
     }
 </page-query>
-
-//for some reason, excerpt is undefined??
