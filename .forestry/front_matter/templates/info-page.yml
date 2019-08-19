@@ -36,7 +36,7 @@ fields:
     required: false
     color_format: Hex
   description: Enter info page background color here
-  default: "#A2B6B2"
+  default: "#B1BCBC"
 - name: text_color
   type: color
   label: Text Color
