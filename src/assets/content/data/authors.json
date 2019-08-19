@@ -1,10 +1,13 @@
 {
-    "authors": [
-        "Watson & Crick", 
-        "Walt Whitman", 
-        "Grace Hopper", 
-        "Paramahansa Yogananda",
-        "Valentina Tereshkova",
-        "Ralph Waldo Emerson"
-    ]
+  "authors": [
+    "Allen Ginsberg",
+    "Henry David Thoreau",
+    "Friedrich Nietzsche",
+    "Watson & Crick",
+    "Walt Whitman",
+    "Grace Hopper",
+    "Paramahansa Yogananda",
+    "Valentina Tereshkova",
+    "Ralph Waldo Emerson"
+  ]
 }
