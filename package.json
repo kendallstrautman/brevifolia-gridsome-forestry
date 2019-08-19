@@ -1,6 +1,10 @@
 {
-  "name": "starter-blog-gridsome",
+  "name": "brevifolia-gridsome-forestry",
   "private": true,
+  "description": "A simple starter blog to get up and developing quickly with Forestry & Gridsome",
+  "license": "MIT",
+  "version": "0.1.0",
+  "author": "kendall strautman",
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
@@ -13,5 +17,13 @@
     "gridsome": "^0.6.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.2.0"
+  },
+  "keywords": [
+    "gridsome",
+    "forestry"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/forestryio/brevifolia-gridsome-forestry"
   }
 }
