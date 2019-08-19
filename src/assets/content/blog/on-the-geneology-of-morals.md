@@ -1,6 +1,6 @@
 ---
 title: On the Geneology of Morals
-author: Watson & Crick
+author: Friedrich Nietzsche
 date: 2019-08-19T07:00:00Z
 hero_image: "/src/assets/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
 
