@@ -4,12 +4,18 @@
              <g-link  v-for="post in posts" :key="post.node.title" :to="post.node.path" >
                 <li>
                     <div class="hero_image">
-                        <g-image :src="post.node.hero_image" :alt="post.node.title" width="300" height="300" quality="75"></g-image>
+                        <g-image 
+                          :src="post.node.hero_image" 
+                          :alt="post.node.title" 
+                          width="300" 
+                          height="300" 
+                          quality="75">
+                        </g-image>
                     </div>
                     <div class="blogList__info">
                         <h2>{{ post.node.title }}</h2>
-                        <h3>{{ new Date(post.node.date).toDateString().slice(4) }}</h3>
-                        <p v-html="cleanPostBody(post)"></p>
+                        <h3>{{ formatDate(post.node.date) }}</h3>
+                        <p v-html="formatExcerpt(post.node.content)"></p>
                     </div>
                 </li>
             </g-link>            
@@ -26,8 +32,11 @@
             }
         },
         methods: {
-          cleanPostBody: function (post) {
-            return post.node.content.slice(0,200).trim() + "..."
+          formatDate(date) {
+            return new Date(date).toDateString().slice(4)
+          }, 
+          formatExcerpt(excerpt) {
+            return excerpt.slice(0,200).trim() + "..."
           }
         }
     }

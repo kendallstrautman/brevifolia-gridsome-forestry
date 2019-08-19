@@ -6,7 +6,9 @@
             </g-link>
             <div>
                 <h1>
-                    <g-link :to="infoLink">{{ isInfoPage ? "close" : "info" }}</g-link>
+                    <g-link :to="infoLink">
+                        {{ isInfoPage ? "close" : "info" }}
+                    </g-link>
                 </h1>
             </div>
         </nav>
@@ -22,22 +24,22 @@ export default {
         }
     },
     computed: {
-        infoLink: function() {
-            return this.page === "info" ? "/" : "/info"
+        isInfoPage() {
+            return this.page === "info" && true
+        },
+        infoLink() {
+            return this.isInfoPage ? "/" : "/info"
         }, 
-        isInfoPage: function() {
-            return this.page === "info" ? true : false
-        }
     }
 }
 </script>
 
 <static-query>
-query {
-  metaData {
-    siteName
-  }
-}
+    query {
+    metaData {
+        siteName
+    }
+    }
 </static-query>
 
 <style>

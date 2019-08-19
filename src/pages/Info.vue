@@ -6,17 +6,23 @@
             <ul>
                 <li>
                     <p>
-                        <a :href="`mailto:${data.contact.email}`">Email: {{ data.contact.email}}</a>
+                        <a :href="`mailto:${data.contact.email}`">
+                            Email: {{ data.contact.email}}
+                        </a>
                     </p>
                 </li>
                 <li>
                     <p>
-                        <a :href="`https://twitter.com/${data.contact.twitter_handle}`">Twitter: @{{ data.contact.twitter_handle}}</a>
+                        <a :href="`https://twitter.com/${data.contact.twitter_handle}`">
+                            Twitter: @{{ data.contact.twitter_handle}}
+                        </a>
                     </p>
                 </li>
                 <li>
                     <p>
-                        <a :href="`https://github.com/${data.contact.github_handle}`">Github: {{ data.contact.github_handle }}</a>
+                        <a :href="`https://github.com/${data.contact.github_handle}`">
+                            Github: {{ data.contact.github_handle }}
+                        </a>
                     </p>
                 </li>
             </ul>
@@ -44,19 +50,19 @@
 
 <page-query>
     query getInfoPageData {
-    metaData {
-        infoData {
-            description
-            cta 
-            contact {
-                email
-                twitter_handle
-                github_handle
+        metaData {
+            infoData {
+                description
+                cta 
+                contact {
+                    email
+                    twitter_handle
+                    github_handle
+                }
+                background_color
+                text_color
             }
-            background_color
-            text_color
         }
-    }
     }
 </page-query>
 

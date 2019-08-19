@@ -58,6 +58,7 @@ query getPostData ($path: String!) {
     }
 
     .blog__info {
+        text-align: center;
         padding: 1.5rem 1.25rem;
         width: 100%;
         max-width: 768px;
@@ -100,13 +101,13 @@ query getPostData ($path: String!) {
     }
 
     .blog__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 1.25rem;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 1.25rem;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
         h2 {
             margin-bottom: 0;
         }

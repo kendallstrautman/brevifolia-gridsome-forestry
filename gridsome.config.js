@@ -5,6 +5,8 @@ module.exports = {
   //need this for forestry preview docker image
   host: process.env.HOSTNAME,
   port: 8080,
+  //----------------
+  //make editable config & data files available to graphql
   metaData: {
     siteName: config.title,
     siteDescription: config.description,
