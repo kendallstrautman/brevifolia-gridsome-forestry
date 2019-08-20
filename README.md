@@ -12,7 +12,7 @@
 
 ## About
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/314f6fb1-b4a6-484a-ad3d-c26663a63bca/deploy-status)](https://app.netlify.com/sites/brevifolia-gridsome-forestry/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/314f6fb1-b4a6-484a-ad3d-c26663a63bca/deploy-status)](https://app.netlify.com/sites/brevifolia-gridsome-forestry/deploys).
 
 Brevifolia is minimalist blog starter to get you going using [Forestry](https://forestry.io/) with [Gridsome](https://gridsome.org). Check out the demo [here](https://brevifolia-gridsome-forestry.netlify.com/)
 
@@ -28,8 +28,6 @@ The styles were coded & designed by yours truly, using [scss](https://sass-lang.
     <img alt="Import this project into Forestry" src="https://assets.forestry.io/import-to-forestryK.svg" />
 </a>
 
-#### *Using the Gridsome CLI*
-TBD...
 #### *Set-up Locally*
 In your terminal, navigate to where you would like this blog to live, then run 
 ```bash
