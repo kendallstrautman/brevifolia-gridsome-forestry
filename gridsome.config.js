@@ -8,7 +8,7 @@ module.exports = {
   port: 8080,
   //----------------
   //make editable config & data files available to graphql
-  metaData: {
+  metadata: {
     siteName: config.title,
     siteDescription: config.description,
     infoData: infoData, 
