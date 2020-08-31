@@ -2,7 +2,7 @@
     <header class="header">
         <nav class="nav">
             <g-link to="/" exact>
-                <h1>{{ $static.metaData.siteName }}</h1>
+                <h1>{{ $static.metadata.siteName }}</h1>
             </g-link>
             <div>
                 <h1>
@@ -29,14 +29,14 @@ export default {
         },
         infoLink() {
             return this.isInfoPage ? "/" : "/info"
-        }, 
+        },
     }
 }
 </script>
 
 <static-query>
     query {
-    metaData {
+    metadata {
         siteName
     }
     }

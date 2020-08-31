@@ -30,11 +30,9 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_env:
-  - GRAPHQL_ENDPOINT=/___graphql
-  preview_output_directory: src/
+  preview_output_directory: src
   install_dependencies_command: yarn install
-  preview_docker_image: node:10
+  preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: yarn forestry-preview

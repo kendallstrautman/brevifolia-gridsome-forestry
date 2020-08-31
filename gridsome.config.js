@@ -3,15 +3,11 @@ const infoData = require("./src/assets/content/data/info.json")
 
 module.exports = {
   siteName: config.title,
-  //need this for forestry preview docker image
-  host: process.env.HOSTNAME,
-  port: 8080,
-  //----------------
   //make editable config & data files available to graphql
-  metaData: {
+  metadata: {
     siteName: config.title,
     siteDescription: config.description,
-    infoData: infoData, 
+    infoData: infoData,
   },
   plugins: [
     {
