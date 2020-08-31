@@ -9,7 +9,7 @@
     "build": "gridsome build",
     "dev": "gridsome develop",
     "explore": "gridsome explore",
-    "forestry-preview": "gridsome develop -p 8080 --host 0.0.0.0"
+    "forestry-preview": "gridsome develop"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
